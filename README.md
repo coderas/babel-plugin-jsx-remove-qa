@@ -1,5 +1,10 @@
 ## babel-plugin-jsx-remove-qa
 
+> You may want to consider using
+[`babel-plugin-jsx-remove-data-test-id`](https://www.npmjs.com/package/babel-plugin-jsx-remove-data-test-id)
+over this package, since we believe it is more delcarative and works
+well as a uniform approach for both unit testing, and end to end.
+
 Remove QA classes from your production builds.
 
 ### Motivation
