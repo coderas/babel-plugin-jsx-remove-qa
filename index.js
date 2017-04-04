@@ -14,7 +14,9 @@ const RemoveQAClasses = ({ types: t }) => {
         ];
       }
 
-      const classNameRegEx = /(^qa-([-\w])*|\sqa-([-\w])*)/g;
+      const classNameRegEx = state.opts.classNameRegEx
+        ? new RegExp(state.opts.classNameRegEx, 'i')
+        : /(^qa-([-\w])*|\sqa-([-\w])*)/g;
       let newClassNameValue;
 
       const validClassNameAttributes = attr => {
